@@ -10,7 +10,7 @@ window.onload=() =>{
 
     setTimeout(() => { //if you don't have a 500ms timeout shit breaks on load randomly so just leave this here
 
-        if(gob.host == "clips"){var tar = document.querySelector("div.tw-pd-t-1")}; //clips.twitch.tv/blahdbladhbladh view
+        if(gob.host == "clips"){var tar = (document.querySelectorAll("div.tw-pd-t-1"))[1]}; //clips.twitch.tv/blahdbladhbladh view
         if(gob.host == "twitch"){var tar = document.querySelector("div.tw-mg-t-2")}; //channel clips view eg twitch.tv/moonmoon/clips/blahblahblah
 
         let cdiv = document.createElement('div')

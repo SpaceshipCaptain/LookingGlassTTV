@@ -1,0 +1,21 @@
+
+{
+  "name": "TTVLookingGlass",
+  "version": "1.0",
+  "description": "Finds vods from clips",
+  "permissions": ["tabs", "*://clips.twitch.tv/*", "*://www.twitch.tv/*/clip/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://clips.twitch.tv/*", "*://www.twitch.tv/*/clip/*"],
+      "html": ["findermain.html"],
+      "js": ["main.js"],
+      "run_at": "document_end",
+      "css": ["style.css"]
+    }
+
+  ],
+  "web_accessible_resources":[
+    "plus.svg"
+  ],
+  "manifest_version": 2
+}

@@ -38,8 +38,11 @@
         margin-left: 5px;
     }
 
-    #submitb img {
+    #plusbutton {
         vertical-align: middle;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
     }
 
     #topd {
@@ -82,9 +85,6 @@
         #D68029 yellow for no clip vod best guess
     */
 
-    .ce :hover {
-        cursor: pointer;
-    }
 
     .plink {
         color: white;
